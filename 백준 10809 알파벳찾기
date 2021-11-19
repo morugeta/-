@@ -1,0 +1,35 @@
+s = input()                
+result = []
+
+if 'a' in s:
+  result.append(str(s.index('a')))  # 여기서 str로 바꿔줘야함
+elif 'a' not in s:
+  result.append(str(-1))            # 여기도
+
+if 'b' in s:
+  result.append(str(s.index('b')))
+elif 'b' not in s:
+  result.append(str(-1))
+
+print(''.join(result))
+
+이렇게 a부터 z까지 풀 생각이었던 바보
+
+
+s = input()
+alphavet = 'abcdefghijklmnopqrstuvwxyz'
+
+for i in alphavet:
+    if i in s:
+        print(s.index(i), end = '')     # end = '' 꼭 해주기
+    else:
+        print(-1, end = '')
+        
+        
+ 이렇게 풀면 훨씬 쉬운걸!!!!! 
+ 
+ 
+ 참고로
+ 아스키코드 변환을 이용해서 푼 풀이도 있다. 재밌음. a = 97  z = 122
+ 
+ 
